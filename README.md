@@ -38,31 +38,35 @@ Webcam (Computer Vision)
 
 📂 Project Structure
 
+## 📂 Project Structure
+
+```text
 Smart-Attendance-System/
 │
 ├── capture_faces.py
-│   └── Captures face images from webcam and stores them in the dataset
+│   └── Capture face images using webcam
 │
 ├── attendance.py
-│   └── Trains the face recognition model using captured images
+│   └── Train the face recognition model
 │
 ├── recognize_faces.py
-│   └── Recognizes faces in real-time and marks attendance
+│   └── Recognize faces and mark attendance
 │
 ├── haarcascade_frontalface_default.xml
-│   └── Haar Cascade classifier for face detection
+│   └── Face detection model
 │
 ├── dataset/
-│   └── Stores captured face images (user-wise folders)
+│   └── Stored face images
 │
 ├── trainer.yml
-│   └── Saved trained LBPH face recognition model
+│   └── Trained model file
 │
 ├── Attendance.csv
-│   └── Stores attendance records with date and time
+│   └── Attendance records
 │
 └── README.md
-    └── Project documentation and usage instructions
+    └── Project documentation
+
 
 ⚙️ Installation & Setup
 1️⃣ Install Required Libraries
