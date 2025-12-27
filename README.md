@@ -37,16 +37,32 @@ CSV file handling
 Webcam (Computer Vision)
 
 📂 Project Structure
+
 Smart-Attendance-System/
 │
-├── capture_faces.py        # Capture face images
-├── attendance.py           # Train face recognition model
-├── recognize_faces.py      # Recognize faces & mark attendance
+├── capture_faces.py
+│   └── Captures face images from webcam and stores them in the dataset
+│
+├── attendance.py
+│   └── Trains the face recognition model using captured images
+│
+├── recognize_faces.py
+│   └── Recognizes faces in real-time and marks attendance
+│
 ├── haarcascade_frontalface_default.xml
-├── dataset/                # Stored face images
-├── trainer.yml             # Trained model
-├── Attendance.csv          # Attendance record
-├── README.md               # Project documentation
+│   └── Haar Cascade classifier for face detection
+│
+├── dataset/
+│   └── Stores captured face images (user-wise folders)
+│
+├── trainer.yml
+│   └── Saved trained LBPH face recognition model
+│
+├── Attendance.csv
+│   └── Stores attendance records with date and time
+│
+└── README.md
+    └── Project documentation and usage instructions
 
 ⚙️ Installation & Setup
 1️⃣ Install Required Libraries
